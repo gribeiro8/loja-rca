@@ -1,0 +1,13 @@
+{
+  "name": "projetoejs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "consign": "^0.1.6",
+    "express": "~4.16.0",
+    "moment": "^2.22.2"
+  }
+}
