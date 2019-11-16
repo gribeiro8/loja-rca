@@ -1,0 +1,25 @@
+.product {
+    margin-top: 30px;
+    background-color: aqua;
+    width: 369px;
+    height: 544px;
+}
+
+.product-img{
+    height: 333px;
+    width: 288px;
+}
+
+.product-title{
+
+}
+
+.product-title h1{
+    color: brown;
+    font-size:33px;
+}
+
+.product-title p{
+    color: rgb(3, 3, 3);
+    font-size: 14px;
+}
