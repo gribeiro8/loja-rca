@@ -1,0 +1,7 @@
+.banner {
+    background-color: #fff;
+    background-image: url(../../assets/imgs/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 911px;
+}
