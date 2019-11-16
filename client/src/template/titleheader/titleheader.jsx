@@ -1,17 +1,18 @@
 import React from 'react'
+import 'font-awesome/css/font-awesome.min.css';
+import './titleheader.css'
+
 
 export default props => (
-    <div>
         <div className="titleheader">
             <h2>{props.title}</h2>
 
 
-            {props.chart =='true' ? (
-               <p>1</p>
+            {props.chart == 'true' ? (
+                <i className="fa fa-shopping-cart icon-cart">1</i>
             ) : null}
-          
+
 
 
         </div>
-    </div>
 )

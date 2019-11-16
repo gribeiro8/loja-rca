@@ -11,6 +11,8 @@ export default class Shopping extends Component {
                 <div className="products-grid">
                     <Product title="TLOU 2" console="ps4" price="199" img="game-1.png"/>
                     <Product title="Cyberpunk" console="ps4, pc, xbox" price="200" img="game-2.png"/>
+                    <Product title="Days Gone" console="ps4" price="127" img="game-3.png"/>
+                    <Product title="God of War" console="ps4" price="60" img="game-4.png"/>
                 </div>
             </div>
         )

@@ -1,0 +1,19 @@
+.titleheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0px 5%;
+    height: 79px;
+    margin-bottom: 76px;
+}
+
+.titleheader h2 {
+    font-size: 55px;
+    margin-top: 76px;
+}
+
+.icon-cart {
+    color: #3877a1;
+    font-size: 22px;
+}

@@ -23,7 +23,6 @@ header {
 }
 
 .nav-link {
-    font-family: 'Open Sans';
     font-weight: normal;
     font-size: 22px;
     line-height: 24px;
@@ -35,8 +34,6 @@ header {
 .login {
     width: 118px;
     height: 60px;
-    background: transparent;
-    font-family: 'Open Sans';
     font-weight: 300;
     font-size: 18px;
     text-align: left;
