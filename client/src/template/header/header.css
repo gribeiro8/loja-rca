@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 5%;
+    height: 101px;
+    margin-top: 22px;
+}
+
+.logo {
+    width: 244px;
+    height: 101px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    padding: 0px 16px;
+}
+
+.nav-link {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: left;
+    color: #3877a1;
+    text-decoration: none;
+}
+
+.login {
+    width: 118px;
+    height: 60px;
+    background: transparent;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+    background-color: #3877a1;
+    border: 1px solid #fff;
+    text-align: center;
+    text-decoration: none;
+    margin-left: auto;
+}

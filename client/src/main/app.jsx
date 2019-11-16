@@ -5,14 +5,14 @@ import Footer from '../template/footer/footer'
 import './app.css'
 
 import React from 'react'
-import Menu from '../template/menu'
+import Header from '../template/header/header'
 import Routes from './routes'
 
 const App = () => (
 
 
     <BrowserRouter>
-        <Menu />
+        <Header />
         <Banner />
         <Routes />
         <Footer/>
