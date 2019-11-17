@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, Redirect } from "react-router-dom";
 
 import Shopping from '../shopping/shopping'
-import Chart from '../chart/chart'
+import Cart from '../cart/cart'
 
 
 
@@ -10,7 +10,7 @@ import Chart from '../chart/chart'
 const Routes = () => (
     <Switch>        
         <Route path="/" exact component={Shopping} />
-        <Route path="/chart" component={Chart} />
+        <Route path="/cart" component={Cart} />
         <Redirect from="*" to="/"/>
     </Switch>
 );

@@ -1,8 +1,8 @@
 import React from 'react'
-import './products.css'
+import './product.css'
 
 export default props => (
-        <div className="product">
+        <div className="product" key={props.id}>
             <div className="product-header">
                 <div className="product-title">
                     <h1>{props.title}</h1>

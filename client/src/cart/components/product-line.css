@@ -1,0 +1,69 @@
+.product-line {
+    display: flex;
+    height: 145px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.product-line img {
+    width: 126px;
+    height: 145px;
+}
+
+.product-info {
+    display: flex;
+}
+
+.product-text {
+    margin-left: 35px;
+}
+
+.product-text h1 {
+    font-family: "Helvetica Neue";
+    font-weight: normal;
+    font-size: 30px;
+    text-align: left;
+    color: #707070;
+}
+
+.product-text p {
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    line-height: 21px;
+    text-align: left;
+    color: #333;
+}
+
+.product-count {
+    display: flex;
+    align-items: center;
+}
+
+.product-count button {
+    width: 38px;
+    height: 39px;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #707070;
+}
+
+.product-count p {
+    font-family: "Helvetica Neue";
+    font-weight: normal;
+    font-size: 30px;
+    text-align: left;
+    color: #707070;
+    margin: 0px 18px;
+}
+
+.product-value {
+    font-family: "Helvetica Neue";
+    font-weight: normal;
+    font-size: 30px;
+    text-align: left;
+    color: #707070;
+}
