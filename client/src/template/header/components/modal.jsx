@@ -10,15 +10,13 @@ export default props => {
     return (
         <div id="myModal" className="modal">
 
-        <div className="modal-content">
-            <form action="" method="post">
-                <input type="text"/>
-                <input type="password" name="password" id=""/>
-                <button>LOGIN</button>
-            </form>
+            <div className="modal-content">
+                <input type="text" value={props.user} onChange={props.userChange} placeholder="E-mail" />
+                <input type="password" name="password" value={props.password} id="" onChange={props.passwordChange} placeholder="Password" />
+                <button onClick={props.handleLogin}>LOGIN</button>
+            </div>
+
         </div>
-       
-       </div>
     )
 
 

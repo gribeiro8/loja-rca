@@ -31,6 +31,9 @@
     background: #fff;
     border: 1px solid #d8c4c4;
     margin-bottom: 16px;
+    padding: 24px;
+    font-size: 22px;
+    color: #3877a1;
 }
 
 .modal-content button {

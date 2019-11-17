@@ -1,10 +1,22 @@
 header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding: 0px 5%;
     height: 101px;
     margin-top: 22px;
+}
+
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .logo {
@@ -43,4 +55,27 @@ header {
     text-align: center;
     text-decoration: none;
     margin-left: auto;
+}
+
+.logout {
+    width: 118px;
+    height: 60px;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+    background: #d55454;
+    border: 1px solid #fff;
+    text-align: center;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.logged-user {
+    margin-right: 68px;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+    color: #3877a1;
 }
