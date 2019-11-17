@@ -1,4 +1,4 @@
-import 'modules/font-awesome/css/font-awesome.css'
+import '../../node_modules/font-awesome/css/font-awesome.min.css'
 import { BrowserRouter } from 'react-router-dom';
 import Banner from '../template/banner/banner'
 import Footer from '../template/footer/footer'

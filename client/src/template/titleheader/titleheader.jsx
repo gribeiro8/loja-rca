@@ -8,7 +8,7 @@ export default props => (
             <h2>{props.title}</h2>
 
 
-            {props.chart == 'true' ? (
+            {props.chart === 'true' ? (
                 <i className="fa fa-shopping-cart icon-cart">1</i>
             ) : null}
 
