@@ -6,14 +6,28 @@
     padding: 0px 5%;
     height: 79px;
     margin-bottom: 76px;
+    padding-top: 76px;
 }
 
 .titleheader h2 {
     font-size: 55px;
-    margin-top: 76px;
 }
 
-.icon-cart {
-    color: #3877a1;
+.char-counter {
+    display: flex;
+    align-items: center;
+}
+
+.char-counter p {
+    font-family: "Open Sans";
+    font-weight: 300;
     font-size: 22px;
+    text-align: left;
+    color: #367ba4;
+}
+
+.char-counter i {
+    margin-right: 25px;
+    color: #3877a1;
+    font-size: 45px;
 }

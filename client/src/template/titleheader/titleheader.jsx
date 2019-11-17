@@ -9,7 +9,11 @@ export default props => (
 
 
             {props.chart === 'true' ? (
-                <i className="fa fa-shopping-cart icon-cart">1</i>
+                <div className="char-counter">
+                     <i className="fa fa-shopping-cart icon-cart"></i>
+                     <p>1</p>
+                </div>
+               
             ) : null}
 
 
