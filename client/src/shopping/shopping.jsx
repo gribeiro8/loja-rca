@@ -1,19 +1,33 @@
 import React, { Component } from 'react'
 import Titleheader from '../template/titleheader/titleheader'
-import Product from './components/products/products'
+import axios from 'axios'
 import './shopping.css'
+import ProductList from './components/products/productslist'
+
+
+const URL = 'http://localhost:5000/products/list'
 
 export default class Shopping extends Component {
+    constructor(props) {
+        super(props)
+        this.state = { products: [] }
+        this.list = this.list.bind(this)
+        this.list();
+    }
+
+    list() {
+        axios.get(`${URL}`)
+            .then(resp => this.setState({ ...this.state, products: resp.data.products }))
+    }
+
+
     render() {
+        
+
         return (
             <div className="main">
                 <Titleheader title="Products" chart="true" />
-                <div className="products-grid">
-                    <Product title="TLOU 2" console="ps4" price="199" img="game-1.png"/>
-                    <Product title="Cyberpunk" console="ps4, pc, xbox" price="200" img="game-2.png"/>
-                    <Product title="Days Gone" console="ps4" price="127" img="game-3.png"/>
-                    <Product title="God of War" console="ps4" price="60" img="game-4.png"/>
-                </div>
+                <ProductList products={this.state.products}/>
             </div>
         )
     }

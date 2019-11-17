@@ -5,20 +5,23 @@ var moment = require('moment');
 
 var app = express();
 
+const allowCors = require('./cors')
+
 
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(allowCors);
 
 
 consign({ locale: 'pt-br', })
-  .include('controller')
-  .then('routes')
-  .into(app);
+    .include('controller')
+    .then('routes')
+    .into(app);
 
 module.exports = app;
 
 var porta = 5000;
-app.listen(porta, function (req, res) {
-  console.log('Server running - ' + porta);
+app.listen(porta, function(req, res) {
+    console.log('Server running - ' + porta);
 });
