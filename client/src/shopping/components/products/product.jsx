@@ -1,8 +1,9 @@
 import React from 'react'
 import './product.css'
 
-export default props => (
-        <div className="product" key={props.id}>
+export default props => {
+    return (
+        <div className="product" key={props.key}>
             <div className="product-header">
                 <div className="product-title">
                     <h1>{props.title}</h1>
@@ -14,9 +15,17 @@ export default props => (
             </div>
             <div className="product-body">
                 <div className="product-img">
-                    <img src={require(`../../../assets/imgs/${props.img}`)} alt=""/>
+                    <img src={require(`../../../assets/imgs/${props.img}`)} alt="" />
                 </div>
-                    <button className="product-button">Add to cart</button>
+                {props.selected === "true" ? (
+                    <button className="product-button-remove" onClick={props.removecart} data-id={props.id}>Remove from cart</button>
+                ) : (
+                    <button className="product-button" onClick={props.addcart} data-id={props.id}>Add to cart</button>
+                        
+                    )}
+
             </div>
         </div>
-)
+    )
+
+}

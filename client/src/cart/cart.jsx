@@ -5,6 +5,7 @@ import ProductTotal from './components/product-total'
 import './cart.css'
 
 export default class Cart extends Component {
+    
     constructor(props){
         super(props)
         this.state = {}

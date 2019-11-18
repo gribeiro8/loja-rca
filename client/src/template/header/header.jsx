@@ -70,9 +70,7 @@ export default props => {
                         <li>
                             <NavLink className="nav-link" to='/'>Products</NavLink>
                         </li>
-                        <li>
-                            <NavLink className="nav-link" to='/cart'>Cart</NavLink>
-                        </li>
+                       
                     </ul>
                 </nav>
             </div>

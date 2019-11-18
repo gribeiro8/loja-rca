@@ -5,32 +5,36 @@ class productsController {
 
         res.json({
             "products": [{
-                    "id": 1,
+                    "id": 0,
                     "title": "TLOU 2",
                     "price": "199",
                     "console": "Ps4",
-                    "img": "game-1.png"
+                    "img": "game-4.png",
+                    "incart": false
                 },
                 {
-                    "id": 2,
+                    "id": 1,
                     "title": "Cyberpunk",
                     "price": "200",
                     "console": "Ps4, Pc, Xbox",
-                    "img": "game-2.png"
+                    "img": "game-3.png",
+                    "incart": false
                 },
                 {
-                    "id": 3,
+                    "id": 2,
                     "title": "Days Gone",
                     "price": "127",
                     "console": "Ps4",
-                    "img": "game-3.png"
+                    "img": "game-2.png",
+                    "incart": true
                 },
                 {
-                    "id": 4,
+                    "id": 3,
                     "title": "God of War",
                     "price": "60",
                     "console": "Ps4",
-                    "img": "game-4.png"
+                    "img": "game-1.png",
+                    "incart": true
                 },
             ]
         })
