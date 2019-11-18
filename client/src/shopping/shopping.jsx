@@ -9,7 +9,7 @@ const URLlist = 'http://localhost:5000/products/list'
 export default class Shopping extends Component {
     constructor(props) {
         super(props)
-        this.state = { products: [], cart: [], total: 0 }
+        this.state = { products: [],  total: 0 }
         this.acessList = this.acessList.bind(this)
         this.countProducts = this.countProducts.bind(this)
         this.countProducts = this.countProducts.bind(this)
@@ -33,6 +33,7 @@ export default class Shopping extends Component {
             if (product.incart === true) {
                 totali++;
             }
+            return 0;
         });
         this.setState({ ...this.state, total: totali })
     }

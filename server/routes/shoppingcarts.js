@@ -1,10 +1,9 @@
 const controller = require('../controller/shoppingcarts');
 
 module.exports = (application) => {
-
     application
         .route('/cart')
-        .get(controller.index);
+        .get(controller.cart);
 
     application
         .route('/cart/add')

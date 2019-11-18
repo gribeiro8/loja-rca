@@ -2,7 +2,7 @@ import React from 'react'
 import './product-line.css'
 
 export default props => (
-    <div className="product-line">
+    <div className="product-line" >
         <div className="product-info">
             <img src={require(`../../assets/imgs/${props.img}`)} alt="" />
             <div className="product-text">
@@ -11,12 +11,13 @@ export default props => (
             </div>
         </div>
         <div className="product-count">
-            <button>-</button>
-                <p>{props.count?props.count:0}</p>
-            <button onClick={props.bottonplus}>+</button>
+            <button onClick={props.bottonminus} data-id={props.id}>-</button>
+            <p>{props.count ? props.count : 0}</p>
+            <button onClick={props.bottonplus} data-id={props.id}>+</button>
         </div>
         <div className="product-value">
-            $ 200
+            $ {props.price}
         </div>
     </div>
 )
+

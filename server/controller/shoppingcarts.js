@@ -1,21 +1,27 @@
 const moment = require('moment');
 class shopController {
 
-    async index(req, res) {
-
+    async cart(req, res) {
         res.json({
-            "cart": [{
-                    "id": 1,
-                    "quant": 1
+            "products": [{
+                    "id": 0,
+                    "title": "Days Gone",
+                    "price": "127",
+                    "console": "Ps4",
+                    "img": "game-2.png",
+                    "total": 1
                 },
                 {
-                    "id": 3,
-                    "quant": 2
-                }
+                    "id": 1,
+                    "title": "God of War",
+                    "price": "60",
+                    "console": "Ps4",
+                    "img": "game-1.png",
+                    "total": 2
+                },
             ]
         })
     };
-
 
     async add(req, res) {
         console.log("ADD: " + req.body.id);

@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react'
-import { NavLink } from 'react-router-dom';
+import React from 'react'
 import './modal.css'
 //import $ from "jquery";
 
 export default props => {
-
-
 
     return (
         <div id="myModal" className="modal">
@@ -18,7 +15,4 @@ export default props => {
 
         </div>
     )
-
-
 }
-

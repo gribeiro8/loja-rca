@@ -9,7 +9,7 @@ import axios from 'axios'
 export default props => {
 
 
-    const URL = 'http://localhost:5000/users/login'
+    
 
     const [isLogged, setisLogged] = useState(false);
     const [user, setUser] = useState();
@@ -28,8 +28,7 @@ export default props => {
     }
 
     function handleLogin() {
-        console.log(password);
-
+        const URL = 'http://localhost:5000/users/login'
         axios.post(URL, { user, password })
             .then(resp => {
                 if (resp.data.status === true) {
@@ -37,6 +36,19 @@ export default props => {
                     setLoggedName(resp.data.name);
                 } else {
                     setisLogged(false);
+                }
+            })
+    }
+
+    function handleLogout(){
+        const URL = 'http://localhost:5000/users/logout'
+        axios.post(URL)
+            .then(resp => {
+                if (resp.data.status === true) {
+                    setisLogged(false);
+                    setLoggedName(resp.data.name);
+                } else {
+                    setisLogged(true);
                 }
             })
     }
@@ -84,7 +96,7 @@ export default props => {
             ) : (
                     <div className="header-right">
                         <p className="logged-user">Welcome {loggedName}</p>
-                        <button className="logout">Logout</button>
+                        <button className="logout" onClick={handleLogout}>Logout</button>
                     </div>
 
                 )}

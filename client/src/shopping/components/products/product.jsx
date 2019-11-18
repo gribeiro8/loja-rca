@@ -3,7 +3,7 @@ import './product.css'
 
 export default props => {
     return (
-        <div className="product" key={props.key}>
+        <div className="product" key={props.id}>
             <div className="product-header">
                 <div className="product-title">
                     <h1>{props.title}</h1>
