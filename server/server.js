@@ -21,7 +21,7 @@ consign({ locale: 'pt-br', })
 
 module.exports = app;
 
-var porta = 5000;
-app.listen(porta, function(req, res) {
-    console.log('Server running - ' + porta);
+const port = process.env.PORT || 5000;
+app.listen(port, function(req, res) {
+    console.log('Server running - ' + port);
 });

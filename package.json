@@ -4,10 +4,13 @@
     "scripts": {
         "client": "cd client && npm start",
         "server": "cd server && npm start",
-        "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+        "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+        "heroku-postbuild": "cd server && npm install && cd.. && cd client && npm install && npm run build",
+        "start": "cd server && npm start"
     },
     "dependencies": {
-        "express": "^4.16.2"
+        "express": "^4.16.2",
+        "concurrently": "^3.5.0"
     },
     "devDependencies": {
         "concurrently": "^3.5.0"
