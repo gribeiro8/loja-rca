@@ -4,7 +4,7 @@ import axios from 'axios'
 import './shopping.css'
 import ProductList from './components/products/productslist'
 
-const URLlist = '/products/list'
+const URLlist = 'http://localhost:5000/products/list'
 
 export default class Shopping extends Component {
     constructor(props) {
@@ -41,7 +41,7 @@ export default class Shopping extends Component {
 
     addcart(e) {
         let index = e.target.dataset.id;
-        const URL = '/cart/add';
+        const URL = 'http://localhost:5000/cart/add';
         axios.post(URL, { id: index })
         .then(resp => {
             let newproducts = this.state.products;
@@ -56,7 +56,7 @@ export default class Shopping extends Component {
 
     removecart(e) {
         let index = e.target.dataset.id;
-        const URL = '/cart/remove';
+        const URL = 'http://localhost:5000/cart/remove';
         axios.post(URL, { id: index })
         .then(resp => {
             let newproducts = this.state.products;

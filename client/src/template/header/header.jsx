@@ -28,7 +28,7 @@ export default props => {
     }
 
     function handleLogin() {
-        const URL = '/users/login'
+        const URL = 'http://localhost:5000/users/login'
         axios.post(URL, { user, password })
             .then(resp => {
                 if (resp.data.status === true) {
@@ -41,7 +41,7 @@ export default props => {
     }
 
     function handleLogout(){
-        const URL = '/users/logout'
+        const URL = 'http://localhost:5000/users/logout'
         axios.post(URL)
             .then(resp => {
                 if (resp.data.status === true) {

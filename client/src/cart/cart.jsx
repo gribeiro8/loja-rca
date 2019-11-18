@@ -7,7 +7,7 @@ import ProductTotal from './components/product-total'
 import './cart.css'
 
 
-const URLlist = '/cart'
+const URLlist = 'http://localhost:5000/cart'
 
 export default class Cart extends Component {
 
