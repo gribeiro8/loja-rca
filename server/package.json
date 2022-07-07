@@ -8,6 +8,6 @@
   "dependencies": {
     "consign": "^0.1.6",
     "express": "~4.16.0",
-    "moment": "^2.22.2"
+    "moment": "^2.29.4"
   }
 }
